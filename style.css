@@ -3,6 +3,9 @@ body {
   color: #fff;
   font-family: sans-serif;
 }
+h1 {
+  text-align: center;
+}
 body,
 html {
   margin: 0;
