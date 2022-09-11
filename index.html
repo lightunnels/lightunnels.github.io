@@ -9,14 +9,14 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
 <script id="vertexShader" type="x-shader/x-vertex">
-    void main() {
+  void main() {
         gl_Position = vec4( position, 1.0 );
     }
 </script>
 <script id="fragmentShader" type="x-shader/x-fragment">
-    // By Liam Egan
+  // By Liam Egan
     // 2018
   
     uniform vec2 u_resolution;
@@ -106,7 +106,7 @@
         r.x * r.y + QR * 5.
       );
       colour += -.1;
-      colour = clamp(colour, -0.01, 0.05.);
+      colour = clamp(colour, -0.001, 0.05);
 
       
       // colour = vec3(QR * 200.);
@@ -122,7 +122,6 @@
       gl_FragColor = vec4(colour + (abs(colour) * .5), 1.);
     }
 </script>
-
 
 <div id="container"></div>
 <!-- partial -->
